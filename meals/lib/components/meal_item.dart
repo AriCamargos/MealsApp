@@ -79,21 +79,21 @@ class MealItem extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    const Icon(Icons.schedule),
+                    const Icon(Icons.schedule_rounded),
                     const SizedBox(width: 6),
                     Text('${meal.duration} min'),
                   ],
                 ),
                 Row(
                   children: [
-                    const Icon(Icons.work),
+                    const Icon(Icons.work_rounded),
                     const SizedBox(width: 6),
                     Text(meal.complexityText),
                   ],
                 ),
                 Row(
                   children: [
-                    const Icon(Icons.attach_money),
+                    const Icon(Icons.attach_money_rounded),
                     const SizedBox(width: 6),
                     Text(meal.costText),
                   ],
