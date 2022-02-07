@@ -1,12 +1,17 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 import 'package:meals/screens/category_screen.dart';
 import 'package:meals/screens/favorite_screen.dart';
 import '../components/main_drawer.dart';
+import '../models/meal.dart';
 
 //Navegação com abas
 
 class TabsScreen extends StatefulWidget {
-  const TabsScreen({Key? key}) : super(key: key);
+  final List<Meal> favoriteMeals;
+
+  const TabsScreen(this.favoriteMeals);
 
   @override
   State<TabsScreen> createState() => _TabsScreenState();
@@ -17,16 +22,22 @@ class _TabsScreenState extends State<TabsScreen> {
   int _selectedScreenIndex = 0;
 
   //Lista de Widgets.
-  final List<Widget> _screens = const [
-    CategoriesScreen(),
-    FavoriteScreen(),
-  ];
-
+  late List<Widget> _screens;
   //Lista de String
-  final List<String> _titles = const [
-    'Lista de Categorias',
-    'Meus Favoritos',
-  ];
+  late List<String> _title;
+
+  @override
+  void initState() {
+    super.initState();
+    _screens = [
+      const CategoriesScreen(),
+      FavoriteScreen(widget.favoriteMeals),
+    ];
+    _title = const [
+      'Lista de Categorias',
+      'Meus Favoritos',
+    ];
+  }
 
   //Função para alterar a variável inteira criada
   _selectScreen(int index) {
@@ -39,7 +50,7 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_titles[_selectedScreenIndex]),
+        title: Text(_title[_selectedScreenIndex]),
       ),
       //Definindo os 2 componentes que irão aparecer nas 2 abas
       body: _screens[_selectedScreenIndex],
@@ -57,7 +68,7 @@ class _TabsScreenState extends State<TabsScreen> {
             label: 'Categorias',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.star_rounded),
+            icon: Icon(Icons.favorite_rounded),
             label: 'Favoritos',
           ),
         ],
