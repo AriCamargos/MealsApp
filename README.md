@@ -36,13 +36,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Dart
 
 ## 💻 Projeto
-Aplicativo de receitas culinárias com conceitos de Navegação, Classes, Métodos, Funções, conceitos como SOLID e outros design pattern. O projeto segue em desenvolvimento, e em breve, serão implementados novas funcionalidades e melhorias.
+Aplicativo de receitas culinárias com conceitos de Navegação, Classes, Métodos, Funções, conceitos como SOLID e outros Designs Patterns.
   
 ### Imagem da tela de login
 
 <p align="center">
-<img src=" width="500" >
+<img src="https://user-images.githubusercontent.com/86811983/154984073-ba889786-7825-4b4b-91ef-fbd8ec4a043e.jpeg"  width="500">
+<img src="https://user-images.githubusercontent.com/86811983/154983582-8b2c7e05-502c-41b0-9f95-6d36269eec81.jpeg"  width="500">
+<img src="https://user-images.githubusercontent.com/86811983/154984106-2afd031f-0efc-448b-80e5-d3960ce1e7ed.jpeg"  width="500">
+<img src="https://user-images.githubusercontent.com/86811983/154984094-f2a326c0-b2b4-448d-ad5a-3e785a2a5f0f.jpeg"  width="500">
 </p>
+
 
 ## 📝 Licença
 
