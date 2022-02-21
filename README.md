@@ -36,8 +36,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Dart
 
 ## 💻 Projeto
-Aplicativo de receitas culinárias com conceitos de Navegação, Classes, Métodos, Funções e afins
-  Esta aplicação consiste na releitura (retirada do site Behance) de uma página de login de um aplicativo para pessoas que tem um lifestyle dedicado ao seu animal de estimação. Aqui se encontram alguns conceito básicos do Flutter como widgets, alignments, buttons, colors, navegation, images, fonts e principalmente de herança. O projeto segue em desenvolvimento, e em breve, serão implementados novas funcionalidades e melhorias.
+Aplicativo de receitas culinárias com conceitos de Navegação, Classes, Métodos, Funções, conceitos como SOLID e outros design pattern. O projeto segue em desenvolvimento, e em breve, serão implementados novas funcionalidades e melhorias.
   
 ### Imagem da tela de login
 
